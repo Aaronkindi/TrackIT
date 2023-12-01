@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura', sans-serif;
+}
+body{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    background-color: white;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: orange;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+#navbar li a:hover{
+    color: black;
+}
+
+#hero{
+    background-image: url(images/cooins.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#hero h1{
+    color: orange;
+    font-size: 120px;
+    font-weight: 600;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid orange;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: orange;
+    transition: 0.5s;
+}
+.btn:hover{
+    background: orange;
+    color: white;
+}
+#hero p{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+
+}
+/*-----------Expense---------*/
+h1, h2 {
+    text-align: center;
+}
+  
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+  
+.input-section label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: orange;
+}
+  
+.input-section input[type="number"], .input-section input[type="date"] {
+    padding: 5px;
+    margin-right: 10px;
+    color: orange;
+}
+  
+.input-section button {
+    padding: 5px 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.expenses-list {
+    margin: 20px;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: orange;
+    color: white;
+}
+  
+tfoot td {
+    font-weight: bold;
+}
+  
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: auto; /* Center the container */
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+canvas {
+    border: 2px solid orange; /* Add a border with an orange color */
+    margin: 10px; /* Add margin for spacing between charts */
+    max-width: 300px; /* Adjust the max-width as needed */
+    width: 100%; /* Make the canvas responsive */
+    height: auto; /* Make the canvas responsive */
+}
+
+  

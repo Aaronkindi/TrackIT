@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Track IT</title>
+</head>
+<body>
+   <div  id="header">
+    <nav>
+        <ul id="navbar">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#Expenses">Expenses</a></li>
+            <li><a href="#graphs">Graphs</a></li>
+        </ul>
+    </nav>
+   </div>
+   <div id="hero">
+        <h1>Track IT</h1>
+        <p>Track your expenses</p>
+        <button type="submit" class="btn">Get Started</button>
+   </div>
+   <div class="input-section">
+    <label for="category-select">Category:</label>
+    <select id="category-select">
+        <option value="Food & Beverage">Food & Beverage</option>
+        <option value="Rent/tax">Rent</option>
+        <option value="Transport">Transport</option>
+        <option value="Relaxing">Relaxing</option>
+        <option value="Others">Others</option>
+        <option value="Groceries">Groceries</option>
+    </select>
+    <label for="amount-input">Amount:</label>
+    <input type="number" id="amount-input">
+    <label for="date-input">Date:</label>
+    <input type="date" id="date-input">
+    <button id="add-btn">Add</button>
+</div>
+<div id="Expenses"><div class="expenses-list">
+    <h2>Expenses List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="expnese-table-body">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td id="total-amount"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</div></div>
+
+<div id="graphs"><div class="graphs">
+    <canvas id="pieChart" width="300" height="300"></canvas>
+        <canvas id="barChart" width="300" height="300"></canvas>
+        <canvas id="lineChart" width="300" height="300"></canvas>
+   </div></div>
+   
+</body>
+<script src="script.js"></script>
+</html>
